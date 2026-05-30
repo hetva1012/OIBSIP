@@ -1,0 +1,708 @@
+/* ================= GOOGLE FONT ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================= RESET ================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+/* ================= SMOOTH SCROLL ================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ================= LOADER ================= */
+
+#loader{
+    position: fixed;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #0f172a;
+
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader::after{
+    content: "";
+
+    width: 50px;
+    height: 50px;
+
+    border: 5px solid white;
+    border-top: 5px solid #38bdf8;
+
+    border-radius: 50%;
+
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading{
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width: 100%;
+
+    background-color: #0f172a;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+/* ================= LOGO ================= */
+
+.logo h1{
+    color: #38bdf8;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* ================= NAV MENU ================= */
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+/* Hover */
+
+nav ul li a:hover{
+    color: #38bdf8;
+}
+
+/* ================= DARK MODE BUTTON ================= */
+
+#darkModeBtn{
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #38bdf8;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+#darkModeBtn:hover{
+    transform: scale(1.1);
+}
+
+/* ================= HOME SECTION ================= */
+
+.home{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    background:
+    linear-gradient(rgba(15,23,42,0.85),
+    rgba(15,23,42,0.85)),
+
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Home Content */
+
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    flex-wrap: wrap;
+}
+
+/* ================= PROFILE IMAGE ================= */
+
+.image-section img{
+    width: 320px;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #38bdf8;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= TEXT SECTION ================= */
+
+.text-section{
+    max-width: 650px;
+    color: white;
+}
+
+.text-section h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text-section h1{
+    font-size: 65px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.text-section h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text-section p{
+    font-size: 18px;
+    color: #e2e8f0;
+
+    margin-bottom: 30px;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    display: flex;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.btn{
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* Second Button */
+
+.second-btn{
+    background-color: transparent;
+    border: 2px solid #38bdf8;
+    color: white;
+}
+
+.second-btn:hover{
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons{
+    margin-top: 35px;
+}
+
+.social-icons a{
+    display: inline-block;
+
+    margin-right: 20px;
+
+    color: white;
+
+    font-size: 24px;
+
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: #38bdf8;
+    transform: scale(1.2);
+}
+
+/* ================= INTRO SECTION ================= */
+
+.intro{
+    padding: 80px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.intro h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+    color: #0f172a;
+}
+
+.intro p{
+    max-width: 850px;
+    margin: auto;
+
+    font-size: 18px;
+
+    color: #475569;
+}
+
+/* ================= ABOUT PAGE ================= */
+
+.about-page{
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.about-page h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+    color: #0f172a;
+}
+
+.about-page p{
+    max-width: 850px;
+    margin: auto;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+
+    color: #475569;
+}
+
+/* ================= EDUCATION ================= */
+
+.education{
+    padding: 80px 10%;
+    background-color: #e0f2fe;
+
+    text-align: center;
+}
+
+.education h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.education-card{
+    max-width: 700px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ================= SKILLS ================= */
+
+.skills-progress{
+    padding: 80px 10%;
+}
+
+.skills-progress h2{
+    text-align: center;
+    margin-bottom: 40px;
+
+    font-size: 40px;
+}
+
+.progress-box{
+    max-width: 700px;
+    margin: auto;
+}
+
+.progress-box p{
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 12px;
+
+    background-color: #dbeafe;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress{
+    height: 100%;
+    background-color: #38bdf8;
+}
+
+.html{
+    width: 90%;
+}
+
+.css{
+    width: 85%;
+}
+
+.js{
+    width: 70%;
+}
+
+/* ================= CERTIFICATES ================= */
+
+.certificates{
+    padding: 80px 10%;
+    background-color: #f8fafc;
+
+    text-align: center;
+}
+
+.certificates h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.certificate-card{
+    max-width: 500px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ================= PROJECTS ================= */
+
+.projects-page{
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.projects-page h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+/* Project Card */
+
+.project-card{
+    width: 350px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-12px) scale(1.03);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.project-card img{
+    width: 100%;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.project-card h2{
+    margin-bottom: 15px;
+}
+
+.project-card p{
+    color: #475569;
+}
+
+/* Project Button */
+
+.project-btn{
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 24px;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.project-btn:hover{
+    background-color: #0f172a;
+    color: white;
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page{
+    padding: 100px 10%;
+
+    text-align: center;
+
+    background:
+    linear-gradient(rgba(15,23,42,0.92),
+    rgba(15,23,42,0.92)),
+
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.contact-page h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+
+    color: #38bdf8;
+}
+
+.contact-page p{
+    font-size: 18px;
+    margin-bottom: 12px;
+
+    color: #e2e8f0;
+}
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form{
+    margin-top: 50px;
+}
+
+.contact-form form{
+    max-width: 650px;
+
+    margin: auto;
+
+    background-color: rgba(255,255,255,0.08);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Inputs */
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    background-color: rgba(255,255,255,0.1);
+
+    color: white;
+
+    outline: none;
+}
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #cbd5e1;
+}
+
+/* Textarea */
+
+.contact-form textarea{
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button */
+
+.contact-form button{
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover{
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background-color: #020617;
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+}
+
+/* ================= DARK MODE ================= */
+
+.dark-mode{
+    background-color: #020617;
+    color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li{
+        margin: 10px;
+    }
+
+    .home{
+        text-align: center;
+    }
+
+    .text-section h1{
+        font-size: 45px;
+    }
+
+    .text-section h2{
+        font-size: 24px;
+    }
+
+    .image-section img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .contact-page h1{
+        font-size: 40px;
+    }
+
+}
