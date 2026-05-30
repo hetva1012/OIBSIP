@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Hetva Patel | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <!-- Header -->
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <h1>Hetva Patel</h1>
+            </div>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="projects.html">Projects</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- Dark Mode Button -->
+            <button id="darkModeBtn">🖤</button>
+
+        </nav>
+
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+
+        <div class="home-content">
+
+            <!-- Image -->
+            <div class="image-section">
+
+                <img src="hetva.jpg"
+                alt="Hetva Patel">
+
+            </div>
+
+            <!-- Text -->
+            <div class="text-section">
+
+                <h3>Hello, I'm</h3>
+
+                <h1>Hetva Patel</h1>
+
+                <h2>
+                    <span class="typing-text"></span>
+                </h2>
+
+                <p>
+                    I am a passionate Web Development Intern
+                    at Oasis Infobyte who enjoys building
+                    responsive and modern websites using
+                    HTML, CSS, and JavaScript.
+                </p>
+
+                <!-- Buttons -->
+                <div class="buttons">
+
+                    <a href="projects.html"
+                    class="btn">
+                        View Projects
+                    </a>
+
+                    <a href="contact.html"
+                    class="btn second-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+
+        <h2>Welcome To My Portfolio</h2>
+
+        <p>
+            This portfolio website showcases my projects,
+            technical skills, internship work, and learning
+            journey as a beginner frontend developer.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Hetva Patel | All Rights Reserved
+        </p>
+
+    </footer>
+
+    <!-- Typed JS -->
+    <script src=
+    "https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+
+        var typed = new Typed(".typing-text", {
+
+            strings: [
+
+                "Web Developer",
+                "Frontend Designer",
+                "Oasis Infobyte Intern"
+
+            ],
+
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true
+
+        });
+
+    </script>
+
+    <!-- Dark Mode -->
+    <script>
+
+        const darkBtn =
+        document.getElementById("darkModeBtn");
+
+        darkBtn.onclick = function(){
+
+            document.body.classList.toggle("dark-mode");
+
+        }
+
+    </script>
+
+    <!-- Loader -->
+    <script>
+
+        window.addEventListener("load", function(){
+
+            document.getElementById("loader")
+            .style.display = "none";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
