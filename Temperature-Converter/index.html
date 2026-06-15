@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Background Animation -->
+    <div class="background"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <div class="converter-card">
+
+            <!-- Icon -->
+            <div class="icon">
+                🌡️
+            </div>
+
+            <!-- Heading -->
+            <h1>Temperature Converter</h1>
+
+            <p class="subtitle">
+                Convert temperatures instantly
+                with a modern converter.
+            </p>
+
+            <!-- Input -->
+            <input
+            type="number"
+            id="temperature"
+            placeholder="Enter Temperature">
+
+            <!-- Dropdowns -->
+            <div class="select-box">
+
+                <select id="fromUnit">
+
+                    <option value="celsius">
+                        Celsius
+                    </option>
+
+                    <option value="fahrenheit">
+                        Fahrenheit
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin
+                    </option>
+
+                </select>
+
+                <select id="toUnit">
+
+                    <option value="fahrenheit">
+                        Fahrenheit
+                    </option>
+
+                    <option value="celsius">
+                        Celsius
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+
+                <button onclick="convertTemperature()">
+                    Convert
+                </button>
+
+                <button
+                class="reset-btn"
+                onclick="resetFields()">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+            <!-- Result -->
+            <div class="result-box">
+
+                <h2 id="resultText">
+                    Result Appears Here
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
