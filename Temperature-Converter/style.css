@@ -1,0 +1,298 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #020617;
+
+}
+
+/* Animated Background */
+
+.background{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+    linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #1e3a8a,
+    #0ea5e9
+    );
+
+    background-size: 400% 400%;
+
+    animation: bgAnimation 12s ease infinite;
+
+}
+
+/* Background Animation */
+
+@keyframes bgAnimation{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+
+/* Main Container */
+
+.container{
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    padding: 20px;
+
+}
+
+/* Converter Card */
+
+.converter-card{
+
+    max-width: 450px;
+
+    margin: auto;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+    text-align: center;
+
+}
+
+/* Icon */
+
+.icon{
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+
+    animation: float 2s ease-in-out infinite;
+
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+}
+
+/* Heading */
+
+.converter-card h1{
+
+    color: white;
+
+    margin-bottom: 10px;
+
+    font-size: 35px;
+
+}
+
+/* Subtitle */
+
+.subtitle{
+
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+
+}
+
+/* Input */
+
+.converter-card input{
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+/* Select Box */
+
+.select-box{
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+/* Select */
+
+.select-box select{
+
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+/* Buttons */
+
+.button-group{
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+/* Button */
+
+button{
+
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #38bdf8;
+
+    color: #020617;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+/* Hover */
+
+button:hover{
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 5px 15px rgba(56,189,248,0.4);
+
+}
+
+/* Reset Button */
+
+.reset-btn{
+
+    background: #ef4444;
+
+    color: white;
+
+}
+
+/* Result Box */
+
+.result-box{
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.06);
+
+}
+
+/* Result */
+
+.result-box h2{
+
+    color: white;
+
+    font-size: 28px;
+
+}
+
+/* Responsive */
+
+@media(max-width: 500px){
+
+    .select-box,
+    .button-group{
+
+        flex-direction: column;
+
+    }
+
+}
