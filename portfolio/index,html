@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetva Patel | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loader"></div>
+
+    <!-- Header -->
+    <header>
+
+        <nav class="navbar">
+
+            <h2 class="logo">Hetva Patel</h2>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="projects.html">Projects</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <button id="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p>Hello, I'm</p>
+
+            <h1>Hetva Patel</h1>
+
+            <h2>
+                <span class="typing"></span>
+            </h2>
+
+            <p class="description">
+
+                I am a passionate Front-End Web Developer and
+                Web Development Intern at Oasis Infobyte.
+                I enjoy designing beautiful, responsive and
+                user-friendly websites using HTML, CSS and JavaScript.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="projects.html" class="btn">
+                    View Projects
+                </a>
+
+                <a href="contact.html" class="btn secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="profile.jpg" alt="Hetva Patel">
+
+        </div>
+
+    </section>
+
+    <!-- Quick Introduction -->
+
+    <section class="intro">
+
+        <h2>Welcome To My Portfolio</h2>
+
+        <p>
+
+            This portfolio showcases my projects,
+            internship experience and technical skills.
+
+            I enjoy learning modern web technologies and
+            continuously improving my development skills.
+
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Hetva Patel |
+            Designed with ❤️ using HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- Typed JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
